@@ -1,0 +1,35 @@
+{
+  "name": "fastqstream",
+  "version": "0.0.0",
+  "description": "A stream transform to convert text to FASTQ records",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "test": "standard && npm run deps && nyc tape 'test/*.js' | tap-spec",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/luizirber/fastqstream.git"
+  },
+  "author": "Luiz Irber <sourmash@luizirber.org>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/luizirber/fastqstream/issues"
+  },
+  "homepage": "https://github.com/luizirber/fastqstream",
+  "devDependencies": {
+    "concat-stream": "^1.6.0",
+    "debug": "^2.6.0",
+    "dependency-check": "^2.8.0",
+    "nyc": "^10.1.2",
+    "standard": "*",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3",
+    "yamljs": "^0.3.0"
+  },
+  "private": true,
+  "dependencies": {
+    "readable-stream": "^2.3.3"
+  }
+}
