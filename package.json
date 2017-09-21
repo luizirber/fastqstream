@@ -1,6 +1,6 @@
 {
   "name": "fastqstream",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A stream transform to convert text to FASTQ records",
   "main": "index.js",
   "scripts": {
