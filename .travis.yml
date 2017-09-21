@@ -1,13 +1,17 @@
 language: node_js
-
 node_js:
-  - '6'
-  - '8'
-
+- '6'
+- '8'
 sudo: false
-
 script:
-  - npm test
-
+- npm test
 after_success:
- - npm i -g codecov && npm run coverage && codecov
+- npm i -g codecov && npm run coverage && codecov
+deploy:
+  provider: npm
+  email: npm@luizirber.org
+  api_key:
+    secure: uYOId2LAdTEOBWzdkfMAs5RzSfZsifiXP8UamiTHCEuZJ8TCrtxBIS46UVL7UCxQMeMhC3oqu0A9iIOMpQGBLEoPifljORPbMFjDHfz1AHEL9BTU/jvaSPlWnhGMSjGzW2Rsirb65/6224/b9e09MgF5r45bjNWLqYkACHxxS5NiyETA2s/vkSW2ygDBuOoHJG2/VTHHqpTeT0DPQekdzwI19jqPjqZbROmuZZ7m5HGKLBqN5VHoekfH7PpBvha8QvqQUPJmR6YDSsRX8yyZmVQMaoDREQUMI+8TQB229HVI+mn9wKp/ipH/9z2CxYlIEXm3dHvrjp53tEJPeYMZNxsJy13NBW6Cn/J+OKLpy9px5kDb9G8kspt1Y0COyj3kDRrIt8CRv/htCodEeg/QPVWxJYowDchS/sxanqfSRUH41DMK6mCz2krafKqjjeriDUys/W+mRF/Ox7wlacGH+n8p97QX8MpkMAdeq2ozNy6oomYbIJ313jfKIaqKQ4tZ/KW5aW+MaGFiFSD1QjByJQOIjyDxUMhbi4nHrBbVrng5aZTrl2Clip0FxiCQDgRSE7TUpYl7n7ixZxunReR/GUDRrESTFG0mUpCYix2RXyDUWCeFR3W7zoCZfdfNdT4TIsmGwOn411x4JhilsOZazjwq5JR4ldlsxGGVDO74xOM=
+  on:
+    tags: true
+    repo: luizirber/fastqstream
