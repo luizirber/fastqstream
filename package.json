@@ -19,8 +19,6 @@
   },
   "homepage": "https://github.com/luizirber/fastqstream",
   "devDependencies": {
-    "concat-stream": "^1.6.0",
-    "debug": "^2.6.0",
     "dependency-check": "^2.8.0",
     "nyc": "^10.1.2",
     "standard": "*",
@@ -28,7 +26,6 @@
     "tape": "^4.6.3",
     "yamljs": "^0.3.0"
   },
-  "private": true,
   "dependencies": {
     "readable-stream": "^2.3.3"
   }
