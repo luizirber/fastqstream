@@ -3,13 +3,8 @@ const Transform = require('readable-stream/transform')
 
 class FASTQStream extends Transform {
   constructor (options) {
-    var validate = false
     if (!options) {
       options = {}
-    }
-    if (options.validate) {
-      validate = true
-      delete options.validate
     }
     if (!options.highWaterMark) {
       options.highWaterMark = 16
@@ -20,17 +15,6 @@ class FASTQStream extends Transform {
 
     this._rawbuf = ''
     this.block = []
-    this.validate = validate
-  }
-
-  validateRecord (record) {
-    var valid = true
-
-    if (record['seq'].length !== record['qual'].length) {
-      this.emit('error', 'sequence and quality length are different in record ' + record['name'])
-    }
-
-    return valid
   }
 
   _processFASTQ (last) {
@@ -40,22 +24,12 @@ class FASTQStream extends Transform {
     for (i = 0; i < lines.length - 1; i++) {
       this.block.push(lines[i])
       if (this.block.length === 4) {
-        var record = ({
+        this.push({
           name: this.block[0],
           seq: this.block[1],
           name2: this.block[2],
           qual: this.block[3]
         })
-
-        var valid = true
-
-        if (this.validate) {
-          valid = this.validateRecord(record)
-        }
-
-        if (valid) {
-          this.push(record)
-        }
         this.block = []
       }
     }
@@ -80,4 +54,41 @@ class FASTQStream extends Transform {
   }
 }
 
-module.exports = FASTQStream
+class FASTQValidator extends Transform {
+  constructor (options) {
+    if (!options) {
+      options = {}
+    }
+    if (!options.highWaterMark) {
+      options.highWaterMark = 16
+    }
+    options.objectMode = true
+
+    super(options)
+  }
+
+  validateRecord (record) {
+  }
+
+  _transform (record, enc, callback) {
+    var valid = true
+
+    if (record['seq'].length !== record['qual'].length) {
+      this.emit('error', 'sequence and quality length are different in record ' + record['name'])
+    }
+
+    if (valid) {
+      this.push(record)
+    }
+    callback()
+  }
+
+  _flush (callback) {
+    callback()
+  }
+}
+
+module.exports = {
+  FASTQStream: FASTQStream,
+  FASTQValidator: FASTQValidator
+}

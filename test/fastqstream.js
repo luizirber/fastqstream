@@ -2,7 +2,7 @@
 var fs = require('fs')
 var test = require('tape')
 
-var FASTQStream = require('..')
+var {FASTQStream, FASTQValidator} = require('../')
 
 test('FASTQStream: basic file', function (t) {
   var reader = fs.createReadStream('./test/test-data/basic.fq')
@@ -46,7 +46,8 @@ test('FASTQStream: validation error', function (t) {
   var reader = fs.createReadStream('./test/test-data/wrong_length.fq')
 
   t.plan(1)
-  reader.pipe(new FASTQStream({validate: true}))
+  reader.pipe(new FASTQStream())
+        .pipe(new FASTQValidator())
         .on('error', function (err) {
           if (err) {
             t.pass(err)
