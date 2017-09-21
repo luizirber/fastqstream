@@ -93,16 +93,31 @@ class FASTQValidator extends Transform {
   }
 
   validateRecord (record) {
-  }
-
-  _transform (record, enc, callback) {
     var valid = true
 
     if (record['seq'].length !== record['qual'].length) {
-      this.emit('error', 'sequence and quality length are different in record ' + record['name'])
+      this.emit('error', 'sequence and quality length should be the same in record ' + record['name'])
+      valid = false
+    }
+    if (record['name'].slice(0, 1) !== '@') {
+      this.emit('error', 'sequence header must start with "@" in record ' + record['name'])
+      valid = false
+    }
+    if (record['name2'].slice(0, 1) !== '+') {
+      this.emit('error', 'sequence header must start with "@" in record ' + record['name'])
+      valid = false
+    }
+    if (record['name'].slice(1) !== record['name2'].slice(1) &&
+        record['name2'].slice(1).length !== 0) {
+      this.emit('error', 'name2 must be empty or match name in record ' + record['name'])
+      valid = false
     }
 
-    if (valid) {
+    return valid
+  }
+
+  _transform (record, enc, callback) {
+    if (this.validateRecord(record)) {
       this.push(record)
     }
     callback()
