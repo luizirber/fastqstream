@@ -16,3 +16,7 @@ deploy:
   on:
     tags: true
     repo: luizirber/fastqstream
+addons:
+  code_climate:
+    repo_token:
+      secure: qOT+mn5/SjTfwGfiH5Axi9qTYWC+clbB4zlm9rugUrgUuaqoIPl37gUES8qaET6KPOB6e9Ps+TWPaX9UPM6KicVJJzHxG7MUNIa+YEHzk6okIq0uUDnKPTJd7SkXiOWk5kH0BehakNhtgnBe6zBHJWMwEfZQlmQR/Bw7IDESYaZ6ADYl3oAG4lZxvv++gYkiHRixD9KcK1cnKeaxwiEAZfdXOMjlnLTE2oJ91/dt1UzH+/PD6CIxbuVSAp0F7J5yW2QaPAgUHDT+wrYFVTRzvjf6shMf8H6Wo/3iCGIbYIe5i8aC3AullAm5RUTQMH1RndqjUjhngRRp7PlUZZJWV4aMoGx3cjBZZr9GtKC6CpamfOVu4z6OIN3lj+3zwgkoV5vXbierN2WIVIDctmOZEfjOgtQQDHMF1Oqbj46D2vwSOKsG+d8i/S2dN4wXicNrD/jiQ6BKcAGxKCZpg25oljD2F5oMAz1PWEtpwFLd9PviUXyqwWJC2Ccr5b1l9j5laKa70T6cg9Zdax0/e51rKstXUjXA4ceivbJu12B7J2Zqqp2NpbL76TB9/Vhs1OEQ5a0j05mUoXasWdm1ZLn26drSt9ePFCpVUWcAnxjup1BoyIcS/3gspDyT8wh5g+ZNW100P1QTvdY62I1I4gAjruzZcf8Yy+fwukEIOJDqN10=
