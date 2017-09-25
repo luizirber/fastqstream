@@ -6,7 +6,8 @@ sudo: false
 script:
 - npm test
 after_success:
-- npm i -g codecov && npm run coverage && codecov
+- npm i -g codecov && npm run coverage && codecov || true
+- npm i -g codeclimate-test-reporter && codeclimate-test-reporter < coverage.lcov || true
 deploy:
   provider: npm
   email: npm@luizirber.org
