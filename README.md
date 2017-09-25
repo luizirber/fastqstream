@@ -48,9 +48,12 @@ but I think it is better to implement it as a Transform and consume data from wh
 
 BSD 3-clause
 
-[0]: https://img.shields.io/npm/v/fastqstream.svg?style=flat-square
-[1]: https://npmjs.org/package/fastqstream
-[2]: https://img.shields.io/travis/luizirber/fastqstream/master.svg?style=flat-square
-[3]: https://travis-ci.org/luizirber/fastqstream
-[4]: https://img.shields.io/codecov/c/github/luizirber/fastqstream/master.svg?style=flat-square
-[5]: https://codecov.io/github/luizirber/fastqstream
+[![License](https://img.shields.io/github/license/luizirber/fastqstream.svg?style=flat)](https://raw.githubusercontent.com/luizirber/fastqstream/master/LICENSE)
+[![NPM version](https://img.shields.io/npm/v/@luizirber/fastqstream.svg?style=flat)](https://www.npmjs.org/package/@luizirber/fastqstream)
+[![Build Status](https://img.shields.io/travis/luizirber/fastqstream.svg?style=flat)](https://travis-ci.org/luizirber/fastqstream)
+[![Coverage Status](https://img.shields.io/codecov/c/luizirber/fastqstream/master.svg?style=flat)](https://codecov.io/github/luizirber/fastqstream)
+[![Dependencies Status](https://img.shields.io/david/luizirber/fastqstream.svg?style=flat)](https://david-dm.org/luizirber/fastqstream#info=dependencies)
+[![devDependencies Status](https://img.shields.io/david/dev/luizirber/fastqstream.svg?style=flat)](https://david-dm.org/luizirber/fastqstream#info=devDependencies)
+[![Code Climate](https://img.shields.io/codeclimate/github/luizirber/fastqstream.svg?style=flat)](https://codeclimate.com/github/luizirber/fastqstream)
+[![NPM downloads per month](https://img.shields.io/npm/dm/@luizirber/fastqstream.svg?style=flat)](https://www.npmjs.org/package/@luizirber/fastqstream)
+[![GitHub issues](https://img.shields.io/github/issues/luizirber/fastqstream.svg?style=flat)](https://github.com/luizirber/fastqstream/issues)
