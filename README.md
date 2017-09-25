@@ -1,5 +1,7 @@
 # fastqstream
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/luizirber/fastqstream.svg)](https://greenkeeper.io/)
+
 > **fastqstream** is a Stream transform for parsing FASTQ files into records.
 
 [![License](https://img.shields.io/github/license/luizirber/fastqstream.svg?style=flat-square)](https://raw.githubusercontent.com/luizirber/fastqstream/master/LICENSE)
