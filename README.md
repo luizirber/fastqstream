@@ -2,15 +2,15 @@
 
 > **fastqstream** is a Stream transform for parsing FASTQ files into records.
 
-[![License](https://img.shields.io/github/license/luizirber/fastqstream.svg?style=flat)](https://raw.githubusercontent.com/luizirber/fastqstream/master/LICENSE)
-[![NPM version](https://img.shields.io/npm/v/fastqstream.svg?style=flat)](https://www.npmjs.org/package/fastqstream)
-[![Build Status](https://img.shields.io/travis/luizirber/fastqstream.svg?style=flat)](https://travis-ci.org/luizirber/fastqstream)
-[![Coverage Status](https://img.shields.io/codecov/c/github/luizirber/fastqstream/master.svg?style=flat)](https://codecov.io/github/luizirber/fastqstream)
-[![Dependencies Status](https://img.shields.io/david/luizirber/fastqstream.svg?style=flat)](https://david-dm.org/luizirber/fastqstream#info=dependencies)
-[![devDependencies Status](https://img.shields.io/david/dev/luizirber/fastqstream.svg?style=flat)](https://david-dm.org/luizirber/fastqstream#info=devDependencies)
-[![Code Climate](https://img.shields.io/codeclimate/github/luizirber/fastqstream.svg?style=flat)](https://codeclimate.com/github/luizirber/fastqstream)
-[![NPM downloads per month](https://img.shields.io/npm/dm/fastqstream.svg?style=flat)](https://www.npmjs.org/package/fastqstream)
-[![GitHub issues](https://img.shields.io/github/issues/luizirber/fastqstream.svg?style=flat)](https://github.com/luizirber/fastqstream/issues)
+[![License](https://img.shields.io/github/license/luizirber/fastqstream.svg?style=flat-square)](https://raw.githubusercontent.com/luizirber/fastqstream/master/LICENSE)
+[![NPM version](https://img.shields.io/npm/v/fastqstream.svg?style=flat-square)](https://www.npmjs.org/package/fastqstream)
+[![Build Status](https://img.shields.io/travis/luizirber/fastqstream.svg?style=flat-square)](https://travis-ci.org/luizirber/fastqstream)
+[![Coverage Status](https://img.shields.io/codecov/c/github/luizirber/fastqstream/master.svg?style=flat-square)](https://codecov.io/github/luizirber/fastqstream)
+[![Dependencies Status](https://img.shields.io/david/luizirber/fastqstream.svg?style=flat-square)](https://david-dm.org/luizirber/fastqstream#info=dependencies)
+[![devDependencies Status](https://img.shields.io/david/dev/luizirber/fastqstream.svg?style=flat-square)](https://david-dm.org/luizirber/fastqstream#info=devDependencies)
+[![Code Climate](https://img.shields.io/codeclimate/github/luizirber/fastqstream.svg?style=flat-square)](https://codeclimate.com/github/luizirber/fastqstream)
+[![NPM downloads per month](https://img.shields.io/npm/dm/fastqstream.svg?style=flat-square)](https://www.npmjs.org/package/fastqstream)
+[![GitHub issues](https://img.shields.io/github/issues/luizirber/fastqstream.svg?style=flat-square)](https://github.com/luizirber/fastqstream/issues)
 
 ## Usage
 
