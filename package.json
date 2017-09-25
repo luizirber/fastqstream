@@ -20,7 +20,7 @@
   "homepage": "https://github.com/luizirber/fastqstream",
   "devDependencies": {
     "dependency-check": "^2.8.0",
-    "nyc": "^10.1.2",
+    "nyc": "^11.2.1",
     "standard": "*",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.3",
