@@ -27,6 +27,6 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "readable-stream": "^2.3.3"
+    "readable-stream": "^2.3.5"
   }
 }
